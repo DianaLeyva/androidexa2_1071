@@ -1,42 +1,60 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'pagina_appbar.dart';
+import 'pagina_checkboxlisttile.dart';
+import 'pagina_choicechip.dart';
+import 'pagina_clipoval.dart';
+import 'pagina_floatingactionbutton.dart';
+import 'pagina_material.dart';
+import 'pagina_pageview.dart';
+import 'pagina_safearea.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+void main() {
+  runApp(MiApp());
+}
+
+class MiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'Menú de Widgets',
+      home: MenuPrincipal(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
+class MenuPrincipal extends StatelessWidget {
+  final List<Map<String, dynamic>> paginas = [
+    {'titulo': 'AppBar', 'widget': PaginaAppBar()},
+    {'titulo': 'CheckboxListTile', 'widget': PaginaCheckboxListTile()},
+    {'titulo': 'ChoiceChip', 'widget': PaginaChoiceChip()},
+    {'titulo': 'ClipOval', 'widget': PaginaClipOval()},
+    {'titulo': 'FloatingActionButton', 'widget': PaginaFloatingActionButton()},
+    {'titulo': 'Material', 'widget': PaginaMaterial()},
+    {'titulo': 'PageView', 'widget': PaginaPageView()},
+    {'titulo': 'SafeArea', 'widget': PaginaSafeArea()},
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
+      appBar: AppBar(title: Text('Menú de Ejemplos')),
+      body: ListView.builder(
+        itemCount: paginas.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(paginas[index]['titulo']),
+            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => paginas[index]['widget'],
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }
