@@ -1,19 +1,25 @@
 # Examen1071
 
-A new Flutter project created with FlutLab - https://flutlab.io
+- appbar
+- ![image](https://github.com/user-attachments/assets/84828b1c-57f8-42ad-b970-be871eb14f4b)
 
-## Getting Started
+- checkbox list tile
+- ![image](https://github.com/user-attachments/assets/5e331dcb-c70d-4c4c-a905-e30301580f5b)
 
-A few resources to get you started if this is your first Flutter project:
+- choice chip
+- ![image](https://github.com/user-attachments/assets/107f2a47-8c73-423a-961f-d21d6bd86131)
 
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
+- clip oval
+- ![image](https://github.com/user-attachments/assets/73de3747-95d8-4825-8769-3c7f26704db0)
 
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- floating action button
+- ![image](https://github.com/user-attachments/assets/2ae04ca6-3534-4b1b-a48d-011ff08e3bf2)
 
-## Getting Started: FlutLab - Flutter Online IDE
+- material
+- ![image](https://github.com/user-attachments/assets/e2189ca6-453a-4d30-86bd-5929f84ecd32)
 
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Join the discussion and conversation on https://flutlab.io/residents
+- page view
+- ![image](https://github.com/user-attachments/assets/9b7aeeb4-85eb-47e1-97a8-e177b6eba17c)
+
+- safe area
+- ![image](https://github.com/user-attachments/assets/f899a2c7-13c5-4a11-b74f-fa9c9348f091)
