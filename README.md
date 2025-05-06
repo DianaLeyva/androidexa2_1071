@@ -1,4 +1,6 @@
 # Examen1071
+- inicio
+- ![image](https://github.com/user-attachments/assets/d7932116-4015-4ebd-8947-20513bb4921b)
 
 - appbar
 - ![image](https://github.com/user-attachments/assets/84828b1c-57f8-42ad-b970-be871eb14f4b)
